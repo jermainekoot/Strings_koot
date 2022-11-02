@@ -16,20 +16,19 @@ goal_1=54
 
 
 
-scorers=f'Ruud Gullit {goal_0}, Marco van Basten {goal_1}'
+scorers=f'{player_1} {goal_0}, {player_2} {goal_1}'
 
 report=f'{player_1} scored in the {goal_0}nd minute\n{player_2} scored in the {goal_1}th minute'
 
 
 player='Ronald Koeman'
-first_name=player[:player.find(' ')]
-last_name=player[7:]#kom hier niet uit mbt find/slice
+first_name= player [:player.find(' ')]
+last_name= player[player.find(' ') + 1:]
 
-
-last_name_len=len(last_name)
+last_name_len=len(player[7:])
 first_name_len=len(first_name)
 
-name_short=player[:player.find(' ')-5] +f'. {last_name}'
+name_short=f'{player[0]}. {last_name}'
 
 chant='Ronald! '*first_name_len
 
@@ -37,20 +36,21 @@ chant=chant[:-1]
 
 
 
-good_chant=chant[-1] != ' '
+good_chant=chant[:-1] != ' '
 print(name_short)
 
-""" 
+"""
 
-Beste C.Verlaan,
-Ik kom er niet uit met de find/slice functie  mbt de last_name!
-Hoe kan ik Koeman nu opzoeken zoals ik (dmv jouw hulp) Ronald heb opgezocht?
-Hierdoor is last_name_len ook niet conform opdracht!
-Thanks voor je feedback..
-
-Gr Jermaine
+Hoi Chris,
+Het is allemaal duidelijk na jouw uitleg :-)
+Hierbij heb ik m aangespast.
+Thanks voor je feedback/hulp..
 
 """
+
+
+
+
 
 
 
