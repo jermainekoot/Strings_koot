@@ -26,7 +26,7 @@ first_name= player [:player.find(' ')]
 last_name= player[player.find(' ') + 1:]
 
 last_name_len=len(player[7:])
-first_name_len=len(first_name)
+first_name_len=len(player[0:6])
 
 name_short=f'{player[0]}. {last_name}'
 
@@ -37,7 +37,7 @@ chant=chant[:-1]
 
 
 good_chant=chant[:-1] != ' '
-print(name_short)
+print(first_name_len)
 
 """
 
